@@ -1,6 +1,6 @@
 require("refeco.packer")
 require("refeco.remap")
-require("refeco.generic-set")
+require("refeco.set")
 
 function Run()
     if vim.bo.filetype == 'perl' then
