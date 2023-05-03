@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 -- move selected lines into text
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -36,3 +37,7 @@ vim.keymap.set('n', '<C-b>', "<cmd>Telescope buffers<CR>")
 
 --gitsigss
 vim.keymap.set('n', '<C-h>', '<cmd>Gitsigns preview_hunk<CR>')
+vim.keymap.set('n', '<C-h>r', '<cmd>Gitsigns reset_hunk<CR>')
+
+--easymotion
+vim.keymap.set('n', 's', '<Plug>(easymotion-s)')

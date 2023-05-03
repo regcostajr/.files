@@ -5,12 +5,18 @@ require("refeco.set")
 function Run()
     if vim.bo.filetype == 'perl' then
         if vim.fn.expand("%:e") == 't' then
-            vim.cmd("!prove -v %")
+            vim.cmd("term prove -v %")
         else
-            vim.cmd("!perl %")
+            vim.cmd("term perl %")
         end
     end
 end
 
-vim.keymap.set("n", "<F5>", Run)
+function Debug()
+    if vim.bo.filetype == 'perl' then
+        vim.cmd("term perl -d %")
+    end
+end
 
+vim.keymap.set("n", "<F5>", Run)
+vim.keymap.set("n", "<F6>", Debug)
