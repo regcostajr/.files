@@ -1,4 +1,4 @@
-require("refeco.packer")
+require("refeco.lazy")
 require("refeco.remap")
 require("refeco.set")
 

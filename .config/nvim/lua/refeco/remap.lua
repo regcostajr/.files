@@ -30,8 +30,8 @@ vim.keymap.set("n", "<Tab>", "<cmd>:bnext<CR>")
 vim.keymap.set("n", "<S-Tab>", "<cmd>:bprev<CR>")
 
 --telescope
-vim.keymap.set('n', '<leader>lf', "<cmd>Telescope find_files<CR>")
-vim.keymap.set('n', '<C-p>', "<cmd>Telescope git_files<CR>")
+vim.keymap.set('n', '<C-p>', "<cmd>Telescope find_files<CR>")
+vim.keymap.set('n', '<C-p>f', "<cmd>Telescope git_files<CR>")
 vim.keymap.set('n', '<C-b>', "<cmd>Telescope buffers<CR>")
 
 --gitsigss
