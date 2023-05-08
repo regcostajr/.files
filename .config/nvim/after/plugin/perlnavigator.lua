@@ -7,11 +7,11 @@ local critic = "/.perlcriticrc"
 local use_tidy = home .. tidy
 local use_critic = home .. critic
 
-if vim.fn.filereadable(cwd .. tidy) then
+if vim.fn.filereadable(cwd .. tidy) == 1 then
     use_tidy = cwd .. tidy
 end
 
-if vim.fn.filereadable(cwd .. critic) then
+if vim.fn.filereadable(cwd .. critic) == 1 then
     use_critic = cwd .. critic
 end
 
