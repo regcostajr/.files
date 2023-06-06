@@ -43,7 +43,8 @@ require("lazy").setup({
     { 'lewis6991/gitsigns.nvim' },
     { 'tpope/vim-commentary' },
     { 'rose-pine/neovim',                name = 'rose-pine' },
-    { 'easymotion/vim-easymotion' }
+    { 'easymotion/vim-easymotion' },
+    { 'cappyzawa/trim.nvim' }
 })
 
 vim.cmd('colorscheme rose-pine')
