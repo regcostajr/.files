@@ -44,7 +44,8 @@ require("lazy").setup({
     { 'tpope/vim-commentary' },
     { 'rose-pine/neovim',                name = 'rose-pine' },
     { 'easymotion/vim-easymotion' },
-    { 'cappyzawa/trim.nvim' }
+    { 'cappyzawa/trim.nvim' },
+    { 'mg979/vim-visual-multi' }
 })
 
 vim.cmd('colorscheme rose-pine')
