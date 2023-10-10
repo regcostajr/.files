@@ -45,7 +45,8 @@ require("lazy").setup({
     { 'rose-pine/neovim',                name = 'rose-pine' },
     { 'easymotion/vim-easymotion' },
     { 'cappyzawa/trim.nvim' },
-    { 'mg979/vim-visual-multi' }
+    { 'mg979/vim-visual-multi' },
+    { "savq/melange-nvim" },
 })
 
-vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme melange')
