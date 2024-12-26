@@ -46,6 +46,16 @@ require("lazy").setup({
     { 'cappyzawa/trim.nvim' },
     { 'mg979/vim-visual-multi' },
     { "savq/melange-nvim" },
+    { "fatih/vim-go" },
+    {
+        "olimorris/codecompanion.nvim",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
+        },
+        config = true
+    },
+    { "github/copilot.vim" },
 })
 
 vim.cmd('colorscheme melange')

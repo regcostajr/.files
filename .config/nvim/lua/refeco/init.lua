@@ -20,3 +20,11 @@ end
 
 vim.keymap.set("n", "<F5>", Run)
 vim.keymap.set("n", "<F6>", Debug)
+
+vim.api.nvim_create_user_command(
+    'Chat',
+    function(opts)
+        vim.cmd('CodeCompanionChat ' .. opts.args)
+    end,
+    { nargs = '*' }
+)
