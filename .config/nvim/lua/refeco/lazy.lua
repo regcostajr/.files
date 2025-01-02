@@ -55,7 +55,13 @@ require("lazy").setup({
         },
         config = true
     },
-    { "github/copilot.vim" },
+    { "zbirenbaum/copilot.lua" },
+    {
+        "zbirenbaum/copilot-cmp",
+        config = function()
+            require("copilot_cmp").setup()
+        end
+    }
 })
 
 vim.cmd('colorscheme melange')
