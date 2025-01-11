@@ -6,17 +6,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- keep cursor at the beginning of the line while crop last character
 vim.keymap.set("n", "J", "mzJ`z")
 
--- center the line after c-d/u
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-
--- center the linex after search
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
-
--- past without copy
-vim.keymap.set("x", "<leader>P", [["_dP]])
-
 -- replace cursor text by
 vim.keymap.set("n", "<C-s>", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
@@ -25,10 +14,6 @@ vim.keymap.set("n", "<C-l>", "<esc>viw")
 
 -- select all
 vim.keymap.set("n", "<C-a>", "<esc>ggVG<CR>")
-
--- buffers
-vim.keymap.set("n", "<Tab>", "<cmd>:bnext<CR>")
-vim.keymap.set("n", "<S-Tab>", "<cmd>:bprev<CR>")
 
 --telescope
 vim.keymap.set('n', '<C-p>', "<cmd>Telescope find_files<CR>")
@@ -41,3 +26,12 @@ vim.keymap.set('n', '<C-h>r', '<cmd>Gitsigns reset_hunk<CR>')
 
 --easymotion
 vim.keymap.set('n', 's', '<Plug>(easymotion-s)')
+
+vim.keymap.set('n', '<F2>', '<cmd>CodeCompanionChat Toggle<CR>')
+
+vim.keymap.set('n', '<leader>f', function()
+    vim.lsp.buf.format({ async = true })
+end)
+
+vim.keymap.set("n", "<F5>", Run)
+vim.keymap.set("n", "<F6>", Debug)
